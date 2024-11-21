@@ -41,7 +41,6 @@ func main() {
 ```
 
 **Output**:
-___
 ```shell
 {Level:1 Size:100 Async:true LogFile:example_10001.log}
 ```
