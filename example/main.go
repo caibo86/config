@@ -1,17 +1,10 @@
-# config
-___
-一个简易的yaml文件读取及配置管理工具
+// -------------------------------------------
+// @file      : main.go
+// @author    : bo cai
+// @contact   : caibo923@gmail.com
+// @time      : 2024/11/21 下午3:25
+// -------------------------------------------
 
-## 主要功能
-___
-- yaml文件读取
-- 支持自定义配置结构体，只需要实现IConfig接口
-- 支持多配置结构体按需注册
-- 支持yaml文件引用环境变量
-
-## Example
-___
-```go
 package main
 
 import (
@@ -38,10 +31,3 @@ func main() {
 	example := config.Get("example").(*Example)
 	fmt.Printf("%+v\n", *example)
 }
-```
-
-**Output**:
-___
-```shell
-{Level:1 Size:100 Async:true LogFile:example_10001.log}
-```
